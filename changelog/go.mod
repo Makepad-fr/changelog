@@ -1,4 +1,4 @@
-module github.com/Makepad-fr/changelog/cli
+module github.com/Makepad-fr/changelog/changelog
 
 go 1.23.4
 
