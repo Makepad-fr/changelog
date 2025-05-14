@@ -1,2 +1,6 @@
+github.com/Makepad-fr/changelog/core v1.0.0 h1:OjMdvozyGQsub+atFnYnE8TdQYqkmKrCpVpPU32g0xA=
+github.com/Makepad-fr/changelog/core v1.0.0/go.mod h1:C8eO29vrZWVGEHgnLnW3QMNG1zclex2RaqLVttGMSiw=
+github.com/Makepad-fr/changelog/parser v1.0.0 h1:zsabnkVSoodE/A4uUOCj1q+e+81Wch7wIiUlFfHUE8M=
+github.com/Makepad-fr/changelog/parser v1.0.0/go.mod h1:d598r5NFkA4xwNZNuK/lzVcIIozVrwsP0G+vNQEXVXM=
 github.com/Makepad-fr/semver/semver v0.0.0-20240510163019-28f8831d8e0f h1:LIcpsoPZd11wE8W5ulkrSSMEVGCy8dixOMl/eHaxc2U=
 github.com/Makepad-fr/semver/semver v0.0.0-20240510163019-28f8831d8e0f/go.mod h1:hdLRKM09tjETgqcHJWwYpoRUO/c0u9keRu/WkYi8EyY=
