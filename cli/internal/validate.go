@@ -8,7 +8,7 @@ import (
 	"github.com/Makepad-fr/changelog/parser"
 )
 
-func VerifyCommand() {
+func ValidateCommand() {
 	args := os.Args[2:]
 
 	file := "CHANGELOG.md"

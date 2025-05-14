@@ -16,8 +16,8 @@ func main() {
 
 	command := os.Args[1]
 	switch command {
-	case "verify":
-		internal.VerifyCommand()
+	case "validate":
+		internal.ValidateCommand()
 	case "new":
 		internal.NewCommand()
 	default:
