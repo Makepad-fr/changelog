@@ -94,11 +94,11 @@ func NewCommand() {
 		case "1":
 			// continue to override below
 		case "2":
-			mergeSection(existingEntry.Changes, core.Added, *added)
-			mergeSection(existingEntry.Changes, core.Changed, *changed)
-			mergeSection(existingEntry.Changes, core.Removed, *removed)
-			mergeSection(existingEntry.Changes, core.Fixed, *fixed)
-			mergeSection(existingEntry.Changes, core.Security, *security)
+			mergeSection(existingEntry.Changes, core.Added, added)
+			mergeSection(existingEntry.Changes, core.Changed, changed)
+			mergeSection(existingEntry.Changes, core.Removed, removed)
+			mergeSection(existingEntry.Changes, core.Fixed, fixed)
+			mergeSection(existingEntry.Changes, core.Security, security)
 
 			existingEntry.Date = time.Now().Format("2006-01-02")
 			cl.Releases[v] = existingEntry
@@ -114,11 +114,11 @@ func NewCommand() {
 
 	// Collect new changes for override or new version
 	changes := map[core.Section][]string{}
-	addSection(changes, core.Added, *added)
-	addSection(changes, core.Changed, *changed)
-	addSection(changes, core.Removed, *removed)
-	addSection(changes, core.Fixed, *fixed)
-	addSection(changes, core.Security, *security)
+	addSection(changes, core.Added, added)
+	addSection(changes, core.Changed, changed)
+	addSection(changes, core.Removed, removed)
+	addSection(changes, core.Fixed, fixed)
+	addSection(changes, core.Security, security)
 
 	cl.Releases[v] = core.Entry{
 		Date:    time.Now().Format("2006-01-02"),
@@ -155,6 +155,6 @@ func promptItems(title string) []string {
 func mergeSection(existing map[core.Section][]string, section core.Section, value []string) {
 	if len(value) == 0 {
 		value = promptItems(section.String())
-	
-	existing[section] = append(existing[section], newItems...)
+	}
+	existing[section] = append(existing[section], value...)
 }
