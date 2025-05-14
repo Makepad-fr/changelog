@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/Makepad-fr/changelog/cli/internal"
+	"github.com/Makepad-fr/changelog/changelog/internal"
 )
 
 func main() {
